@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MaterialCardViewStyle">
+
+    <androidx.constraintlayout.widget.ConstraintLayout style="@style/ConstraintLayoutPadding">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivSrNo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/RoundedImage"
+            app:strokeColor="@color/rounded_stroke"
+            app:strokeWidth="0.1dp" />
+
+        <TextView
+            android:id="@+id/tvSrNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/ivSrNo"
+            app:layout_constraintEnd_toEndOf="@+id/ivSrNo"
+            app:layout_constraintStart_toStartOf="@+id/ivSrNo"
+            app:layout_constraintTop_toTopOf="@+id/ivSrNo"
+            tools:text="1" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvUniversityName"
+            style="@style/UserNameText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/ivRightArrow"
+            app:layout_constraintStart_toEndOf="@+id/ivSrNo"
+            app:layout_constraintBottom_toTopOf="@+id/tv_website"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:layout_constraintTop_toTopOf="@+id/ivSrNo"
+            tools:text="Name" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_website"
+            style="@style/UserTypeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/tvUniversityName"
+            app:layout_constraintTop_toBottomOf="@+id/tvUniversityName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:text="UserType" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivRightArrow"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_right_arrow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

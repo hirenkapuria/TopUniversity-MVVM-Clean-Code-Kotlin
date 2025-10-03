@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Universities</string>
+    <string name="something_went_wrong">Something went wrong!</string>
+    <string name="not_found">Opps! University is not found please try again.</string>
+    <string name="universities">Universities</string>
+    <string name="details">Details</string>
+</resources>
